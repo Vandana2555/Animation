@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        .wrapper
+        {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: aqua;
+        }
+        .wrapper h1
+        {
+            margin: 0;
+            font-size: 150px;
+            color: rgba(225,225,225,0.01);
+            -webkit-background-clip: text;
+            background-image: url("https://picsum.photos/id/974/700");
+            background-repeat: repeat;
+            animation: animate 15s ease-in-out infinite;
+            text-align: center;
+            text-transform: uppercase;
+            font-weight: 900;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+        }
+        @keyframes animate
+        {
+            0%,
+            100%{
+                background-position: left top;
+            }
+            25%{
+                background-position: right bottom;
+            }
+            50%{
+                background-position:left bottom;
+            }
+            25%{
+                background-position: right top;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <h1>vandana</h1>
+    </div>
+</body>
+</html>
